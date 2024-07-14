@@ -30,6 +30,6 @@ current, peak = tracemalloc.get_traced_memory()
 tracemalloc.stop()
 
 print(f"Result: {result}")
-print(f"Time taken: {end - start:.6f} seconds")
+print(f"Time taken: {end - start:.12f} seconds")
 print(f"Current memory usage: {current / 10**6:.6f} MB")
 print(f"Peak memory usage: {peak / 10**6:.6f} MB")
