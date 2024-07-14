@@ -1,3 +1,7 @@
+import time
+import sys
+sys.setrecursionlimit(10**9)
+
 from functools import cache
 
 @cache
@@ -7,7 +11,11 @@ def fibonacci(n):
   else:
     return fibonacci(n-1) + fibonacci(n-2)
   
+start = time.time()
+print(fibonacci(35))
+end = time.time()
 
+print(end-start)
 
 # recursive process right now
 # made faster by becoming an iterative process
